@@ -1,5 +1,7 @@
 # Taylorized micrograd
 
+"Stupid is as stupid does"
+
 ## Table of Contents
 
 - [About](#about)
