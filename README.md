@@ -17,7 +17,13 @@ The activation functions will use the Taylor expansion of the exponential functi
 
 While this project was created just for fun and seems to me like a stupid idea, but the thing is one can use a different order of expansion for the exponential in each tanh/sigmoid/etc that is used.
 
-**While using low-order expansions might seem like (over) regularizing the model, using a different order of expansion might be thought of as dropout applied to (the expansion of) the activation functions.**
+So instead of implementing the activation functions (tanh, sigmoid, etc):
+- The user specifies the order of the Taylor expansion of the exponential function
+- That expansion is used to build tanh and other activation functions
+
+While this yields a huge DAG to backprop through, **you can think of the pros as** (just kidding, I think these are stupid ideas but intuitively they sound right :laughing: ):
+- Using low-order expansions of the activation functions is like (over) regularizing the model
+- Using a different order of expansion for each instantiated tanh in the NN might be thought of as applying some king of dropout to the (expansion of) activation functions
 
 I'm quite sure everyone thought of dropout as being a stupid idea when it was created (but I admit there was empirical evidence/benchmarks to support the claims, none will be given in this context).
 
