@@ -60,3 +60,5 @@ b = a.tanh(10); b.label = "b"
 # Backward propagation
 b.backward()
 ```
+
+You can add other activation functions in case you'd like to experiment with them. Adding other activation functions is a WIP.
