@@ -23,7 +23,7 @@ So instead of implementing the activation functions (tanh, sigmoid, etc):
 
 While this yields a huge DAG to backprop through, **you can think of the pros as** (just kidding, I think these are stupid ideas but intuitively they sound right :laughing: ):
 - Using low-order expansions of the activation functions is like (over) regularizing the model
-- Using a different order of expansion for each instantiated tanh in the NN might be thought of as applying some king of dropout to the (expansion of) activation functions
+- Using a different order of expansion for each instantiated tanh in the NN might be thought of as applying some kind of dropout to the (expansion of) activation functions
 
 I'm quite sure everyone thought of dropout as being a stupid idea when it was created (but I admit there was empirical evidence/benchmarks to support the claims, none will be given in this context).
 
