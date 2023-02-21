@@ -33,7 +33,7 @@ I'm quite sure everyone thought of dropout as being a stupid idea when it was cr
 
 ### Prerequisites
 
-No specific package is required
+If you'd like to visualize the DAGs, you'll need to install `graphviz`
 
 ### Installing
 
